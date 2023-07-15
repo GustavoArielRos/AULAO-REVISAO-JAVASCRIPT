@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--EVENTOS DE MOUSE:-->
+
+    <!-- onclick-->
+    <button onclick="eventoClick()">clique no botao1</button>
+    <br><br>
+    <!-- ondblclick-->
+    <button onclick="eventoDblClick()">clique no botao2</button>
+    <br><br>
+
+    <!-- onmouseover-->
+    <!-- onmouseout-->
+    <!-- onmousemove-->
+    <div id="teste" onmousemove="adicionaTexto()" onmouseout="viraAzul()" onmouseover="viraVermelho()" style="margin:auto auto;width:80%; height: 200px; background:blue"></div>
+    <p id ="texto"></p>
+
+    <br>
+    <!--EVENTOS DE INPUT:-->
+
+    <!--onfocus(se tu clicar no campo, o evento acontece)-->
+    <input onfocus="limpaTexto() " id="campoTexto" style="padding:80px; font-size:40px;" type="text" placeholder="Digite alguma coisa" value="vem com texto">
+
+    <br>
+    <!--onchange-->
+    <!--ele funciona melhor com o tipo select-->
+    <input onchange="mudou() " id="campoTexto2" style="padding:80px; font-size:40px;" type="text" placeholder="Digite alguma coisa" value="vem com texto">
+    
+    <br><br>
+    <select onchange="mudou()" id="itens">
+        <option value="1">Valor 1</option>
+        <option value="2">Valor 2</option>
+        <option value="3">Valor 3</option>
+        <option value="4">Valor 4</option>
+
+    </select>
+    <br><br>
+    <!--EVENTOS DE TECLA:-->
+
+    <!--onkeypress(quado a pessoa aperta a tecla, o evento é disparado)-->
+    <input onkeypress="teclaPressionada()" id="campoTexto3" style="padding:80px; font-size:40px;" type="text" placeholder="Digite alguma coisa" >
+    <br>
+
+    <!--onkeydown-->
+    <input onkeydown="teclaPressionada2()" id="campoTexto4" style="padding:80px; font-size:40px;" type="text" placeholder="Digite alguma coisa" >
+
+    <script src="js/index.js"></script>
+</body>
+</html>
